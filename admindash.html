@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/slick.css"/>
+
+    <link href="css/little.css" rel="stylesheet">
+    
+</head>
+<body>
+    <section class="preloader">
+        <div class="spinner">
+            <span class="sk-inner-circle"></span>
+        </div>
+    </section>
+
+    <main>
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <a class="navbar-brand" href="index.html">
+                    <strong><span>SAOIRSE</span> IT Solutions LLP</strong>
+                </a>
+
+                <div class="d-lg-none">
+                    <a href="sign-in.html" class="bi-person custom-icon me-3"></a>
+
+                    <a href="product-detail.html" class="bi-bag custom-icon"></a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="form1.html">Join us</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="story.html">Story</a>
+                        </li>
+
+                       
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="faq.html">FAQs</a>
+                        </li>
+
+                        
+                    </ul>
+
+                    <div class="d-none d-lg-block">
+                        <a href="sign-in.html" class="bi-person custom-icon me-3"></a>
+
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <header class="site-header section-padding d-flex justify-content-center align-items-center">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-10 col-12">
+                        <h1>
+                            <span class="d-block text-primary">Admin Panel</span>
+                            <span class="d-block text-dark">Only Access For Admin</span>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </header>
+    
+    <h2>All Users</h2>
+    <table border="4" class="no-style" >
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Second Name</th>
+                <th>Email</th>
+                <th>Phone Number</th>
+                <th>Address</th>&nbsp;
+
+                <th>PAN Card Number</th>
+                <th>pan image</th>
+                <th>Aadhaar Number</th>
+                <th>Aadhaar image</th>&nbsp;
+
+                <th>Account Number</th>
+                <th>IFSC Code</th>
+                <th>Bank Name</th>
+                <th>GST Number</th>&nbsp;
+              
+                <th>Years Of Experience</th>
+                <th>Job</th>
+                <th>References</th>&nbsp;
+                
+                <th>Prefered District</th>
+                <th>Expected Daily Workloads</th>&nbsp;
+
+
+                <th>YResume image</th>
+                <th>photo image</th>
+                <th>Address Proof</th>&nbsp;
+
+            </tr>
+        </thead>
+       
+        <tbody>
+            <?php foreach ($users as $user): ?>
+            <tr>
+                <td><?php echo htmlspecialchars($user['id']); ?></td>
+                <td><?php echo htmlspecialchars($user['username']); ?></td>
+                <td><?php echo htmlspecialchars($user['email']); ?></td>
+                <td><?php echo htmlspecialchars($user['first_name']); ?></td>
+                <td><?php echo htmlspecialchars($user['last_name']); ?></td>
+            </tr>
+            <?php endforeach; ?>
+        </tbody>
+    </table>
+    <style>
+        .no-style{
+            font-size: 17px;
+            width: 100%;
+    border-collapse: collapse; /* Ensures borders between cells are merged */
+    margin: 25px 0;
+    font-size: 10px;
+    font-family: 'Arial', sans-serif;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .no-style th{
+            padding: 12px 15px;
+    border: 1px solid #ddd;
+    /* background-color:black; Green background for header */
+    color: black; 
+        }
+        h2{
+            text-align: center;
+        }
+    </style>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/Headroom.js"></script>
+    <script src="js/jQuery.headroom.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+</html>

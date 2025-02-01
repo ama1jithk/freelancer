@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Freelancer</title>
+<!-- 
+        CSS FILES --> 
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/slick.css"/>
+
+        <link href="css/little.css" rel="stylesheet">
+
+
+    </head>
+    
+    <body>
+
+        <section class="preloader">
+            <div class="spinner">
+                <span class="sk-inner-circle"></span>
+            </div>
+        </section>
+    
+        <main>
+
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="index.html">
+                        <strong><span>For</span>  Freelancers</strong>
+                    </a>
+
+                    <div class="d-lg-none">
+                        <a href="sign-in.html" class="bi-person custom-icon me-3"></a>
+
+                        <!-- <a href="product-detail.html" class="bi-bag custom-icon"></a> -->
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="index.html">Home</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="form1.html">Join us</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="story.html">Story</a>
+                            </li>
+
+                            <!-- <li class="nav-item">
+                                <a class="nav-link" href="products.html">Products</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="faq.html">FAQs</a>
+                            </li> -->
+
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <header class="site-header section-padding d-flex justify-content-center align-items-center">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-10 col-12">
+                        <h1>
+                            <span class="d-block text-primary">User Dashboard</span>
+                            <!-- <span class="d-block text-dark">and our answers to them</span> -->
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="dashboard-container">
+            <h1> <?php echo htmlspecialchars($user['first_name']); ?></h1>
+            <div class="container123">
+            <div class="container">
+            <div class="user-info">
+                <p><strong>First Name:</strong> <?php echo htmlspecialchars($user['username']); ?></p>
+                <p><strong>Second Name:</strong> <?php echo htmlspecialchars($user['email']); ?></p>
+                <p><strong>Email:</strong> <?php echo htmlspecialchars($user['first_name']); ?></p>
+                <p><strong>Phonenumber:</strong> <?php echo htmlspecialchars($user['last_name']); ?></p>
+                <p><strong>Address:</strong> <?php echo htmlspecialchars($user['last_name']); ?></p>
+            </div>
+        </div>
+        </div>
+    </div>
+ 
+  
+    <div class="container123">
+        <div class="container">
+        <div class="user-info">
+            <p><strong>PAN Card Number:</strong> <?php echo htmlspecialchars($user['username']); ?></p>
+            <p><strong>image:</strong> <?php echo htmlspecialchars($user['email']); ?></p>
+            <p><strong>Aadhaar Number:</strong> <?php echo htmlspecialchars($user['first_name']); ?></p>
+            <p><strong>adhar image:</strong> <?php echo htmlspecialchars($user['last_name']); ?></p>
+
+        </div></div>
+    </div>
+    
+
+<div class="container123">
+    <div class="container">
+    <div class="user-info">
+        <p><strong>Account Number:</strong> <?php echo htmlspecialchars($user['username']); ?></p>
+        <p><strong>IFSC Code:</strong> <?php echo htmlspecialchars($user['email']); ?></p>
+        <p><strong>Bank Name:</strong> <?php echo htmlspecialchars($user['first_name']); ?></p>
+        <p><strong>GST nUMBER:</strong> <?php echo htmlspecialchars($user['last_name']); ?></p>
+    </div>
+    </div>
+</div>
+
+
+<div class="container123">
+    <div class="container">
+    <div class="user-info">
+        <p><strong>Years Of Experience:</strong> <?php echo htmlspecialchars($user['username']); ?></p>
+        <p><strong>Job:</strong> <?php echo htmlspecialchars($user['email']); ?></p>
+        <p><strong>References:</strong> <?php echo htmlspecialchars($user['first_name']); ?></p>
+       
+    </div>
+</div></div>
+
+
+<div class="container123">
+    <div class="container">
+    <div class="user-info">
+        <p><strong>Prefered District:</strong> <?php echo htmlspecialchars($user['username']); ?></p>
+        <p><strong>Expected Daily Workloads:</strong> <?php echo htmlspecialchars($user['email']); ?></p>
+       
+    </div>
+</div></div>
+
+
+<div class="container123">
+    <div class="container">
+    <div class="user-info">
+        <p><strong>resume image:</strong> <?php echo htmlspecialchars($user['username']); ?></p>
+        <p><strong>photo:</strong> <?php echo htmlspecialchars($user['email']); ?></p>
+        <p><strong>address proof:</strong> <?php echo htmlspecialchars($user['first_name']); ?></p>
+        
+    </div>
+</div>
+</div>
+
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-10 me-auto mb-4">
+                        <h4 class="text-white mb-3"> SAOIRSE  <a href="index.html">IT SOLUTIONS LLP</a></h4>
+                        <p class="copyright-text text-muted mt-lg-5 mb-4 mb-lg-0">Copyright © 2022 <strong>SAOIRSE IT SOLUTIONS LLP</strong></p>
+                        <br>
+            
+                    </div>
+
+                    <div class="col-lg-5 col-8">
+                        <h5 class="text-white mb-3">Sitemap</h5>
+
+                        <ul class="footer-menu d-flex flex-wrap">
+                            <li class="footer-menu-item"><a href="story.html" class="footer-menu-link">Story</a></li>
+
+                      
+
+                            <li class="footer-menu-item"><a href="#" class="footer-menu-link">Privacy policy</a></li>
+
+                            <li class="footer-menu-item"><a href="#" class="footer-menu-link">FAQs</a></li>
+
+                            <li class="footer-menu-item"><a href="#" class="footer-menu-link">Contact</a></li>
+                            <li class="footer-menu-item"><a href="#" class="footer-menu-link">Terms & Condition</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-4">
+                        <h5 class="text-white mb-3">Social</h5>
+
+                        <ul class="social-icon">
+
+                            <li><a href="#" class="social-icon-link bi-youtube"></a></li>
+
+                            <li><a href="#" class="social-icon-link bi-whatsapp"></a></li>
+
+                            <li><a href="https://www.instagram.com/saoirseitsolutionsllp/?utm_source=qr&igsh=MXhoMGZ1Mm1vN252aA%3D%3D#" class="social-icon-link bi-instagram"></a></li>
+
+                            <li><a href="https://x.com/i/flow/login?redirect_after_login=%2FSaoirse_IT" class="social-icon-link bi-skype"></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+        <style>
+            .container123{
+                padding: 30px 30px 30px 30px;
+            }
+        </style>
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/Headroom.js"></script>
+        <script src="js/jQuery.headroom.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/custom.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <div class="dashboard-container">
+        <h1>Welcome, <?php echo htmlspecialchars($user['first_name']); ?>!</h1>
+        
+        <div class="user-info">
+            <p><strong>Username:</strong> <?php echo htmlspecialchars($user['username']); ?></p>
+            <p><strong>Email:</strong> <?php echo htmlspecialchars($user['email']); ?></p>
+            <p><strong>First Name:</strong> <?php echo htmlspecialchars($user['first_name']); ?></p>
+            <p><strong>Last Name:</strong> <?php echo htmlspecialchars($user['last_name']); ?></p>
+        </div>
+    </div>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+}
+
+.dashboard-container {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.user-info {
+    margin-top: 20px;
+}
+
+.user-info p {
+    font-size: 18px;
+    color: #555;
+}
+
+    </style>
+</body>
+</html>
